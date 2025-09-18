@@ -7,8 +7,8 @@ export const sampleResumeData: ResumeData = {
     email: "kaito.kitaya@example.com",
     phone: "+49 123 456 7890",
     location: "Düsseldorf, Germany",
-    linkedin: "linkedin.com/in/kaitokitaya",
-    github: "github.com/kaitokitaya",
+    linkedin: "https://linkedin.com/in/kaitokitaya",
+    github: "https://github.com/kaitokitaya",
     website: "kaitokitaya.dev",
   },
   summary:

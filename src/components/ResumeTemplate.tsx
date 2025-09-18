@@ -4,7 +4,7 @@ import { ResumeData } from '../types/resume';
 
 // Register fonts for better typography
 Font.register({
-  family: 'Helvetica',
+  family: 'Abeezee',
   src: 'http://fonts.gstatic.com/s/abeezee/v9/mE5BOuZKGln_Ex0uYKpIaw.ttf',
 });
 
@@ -24,12 +24,19 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     borderBottom: '2px solid #2563eb',
     paddingBottom: 15,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  center: {
+    flexDirection: 'row',
+    textAlign: 'center',
   },
   name: {
     fontSize: 24,
     fontWeight: 'bold',
     color: '#1f2937',
-    marginBottom: 5,
+    marginBottom: 10,
     fontFamily: 'Helvetica-Bold',
   },
   title: {
@@ -38,7 +45,7 @@ const styles = StyleSheet.create({
     marginBottom: 8,
   },
   contactInfo: {
-    flexDirection: 'row',
+    flexDirection: 'column',
     justifyContent: 'space-between',
     flexWrap: 'wrap',
   },
@@ -54,10 +61,10 @@ const styles = StyleSheet.create({
   },
   sectionTitle: {
     fontSize: 12,
+    color: '#2563eb',
     fontWeight: 'bold',
-    color: '#1f2937',
     marginBottom: 8,
-    borderBottom: '1px solid #d1d5db',
+    borderBottom: '1px solid #2563eb',
     paddingBottom: 3,
     fontFamily: 'Helvetica-Bold',
   },
@@ -226,13 +233,16 @@ const ResumeTemplate: React.FC<ResumeTemplateProps> = ({ data }) => {
       <Page size="A4" style={styles.page}>
         {/* Header Section */}
         <View style={styles.header}>
-          <Text style={styles.name}>{personalInfo.name}</Text>
-          <Text style={styles.title}>{personalInfo.title}</Text>
           <View style={styles.contactInfo}>
+            <Text style={styles.contactItem}>{personalInfo.name}</Text>
             <Text style={styles.contactItem}>{personalInfo.email}</Text>
-            {personalInfo.phone && <Text style={styles.contactItem}>{personalInfo.phone}</Text>}
-            <Text style={styles.contactItem}>{personalInfo.location}</Text>
-            {personalInfo.linkedin && <Text style={styles.contactItem}>{personalInfo.linkedin}</Text>}
+            <Text style={styles.contactItem}>{personalInfo.phone}</Text>
+          </View>
+          <View>
+            <Text style={styles.name}>{personalInfo.name}</Text>
+            <Text style={styles.title}>{personalInfo.title}</Text>
+          </View>
+          <View style={styles.contactInfo}>
             {personalInfo.github && <Text style={styles.contactItem}>{personalInfo.github}</Text>}
             {personalInfo.website && <Text style={styles.contactItem}>{personalInfo.website}</Text>}
           </View>
