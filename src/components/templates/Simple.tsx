@@ -8,7 +8,7 @@ import {
   Font,
   Link,
 } from "@react-pdf/renderer";
-import { ResumeData } from "../types/resume";
+import { ResumeData } from "../../types/resume";
 
 // Register fonts for better typography
 Font.register({
@@ -239,7 +239,7 @@ interface ResumeTemplateProps {
 }
 
 const ResumeTemplate: React.FC<ResumeTemplateProps> = ({ data }) => {
-  const { personalInfo, summary, experience, education, skills, others } =
+  const { personal_info, summary, experience, education, skills, others } =
     data;
 
   // Group skills by category
@@ -257,16 +257,17 @@ const ResumeTemplate: React.FC<ResumeTemplateProps> = ({ data }) => {
         {/* Header Section */}
         <View style={styles.header}>
           <View style={styles.contactInfo}>
-            <Text style={styles.contactItem}>{personalInfo.email}</Text>
-            <Text style={styles.contactItem}>{personalInfo.phone}</Text>
+            <Text style={styles.contactItem}>{personal_info.email}</Text>
+            <Text style={styles.contactItem}>{personal_info.location}</Text>
+            <Text style={styles.contactItem}>{personal_info.phone}</Text>
           </View>
           <View style={styles.center}>
-            <Text style={styles.name}>{personalInfo.name}</Text>
-            <Text style={styles.title}>{personalInfo?.position}</Text>
+            <Text style={styles.name}>{personal_info.name}</Text>
+            <Text style={styles.title}>{personal_info?.position}</Text>
           </View>
-          {personalInfo.webSites && personalInfo.webSites.length > 0 ? (
+          {personal_info.websites && personal_info.websites.length > 0 ? (
             <View style={styles.contactInfo}>
-              {personalInfo.webSites.map((webSite, index) => (
+              {personal_info.websites.map((webSite, index) => (
                 <Link key={index} style={styles.contactItem} src={webSite}>
                   {webSite}
                 </Link>

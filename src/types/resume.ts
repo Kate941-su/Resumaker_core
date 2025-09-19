@@ -4,7 +4,7 @@ export interface PersonalInfo {
   email: string;
   phone?: string;
   location: string;
-  webSites?: string[];
+  websites?: string[];
 }
 
 export interface Experience {
@@ -51,8 +51,8 @@ export interface Other {
 }
 
 export interface ResumeData {
-  personalInfo: PersonalInfo;
-  summary: string;
+  personal_info: PersonalInfo;
+  summary?: string;
   experience: Experience[];
   education: Education[];
   skills: Skill[];

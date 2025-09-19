@@ -4,32 +4,34 @@ resume:
     position: "Software Engineer"
     email: "kaito.kitaya.personal@gmail.com"
     location: "Düsseldorf, Germany"
+    phone: "+4915237179843"
     websites:
       - "https://www.linkedin.com/in/kaito-kitaya-379a70274/"
       - "https://github.com/Kate941-su"
       - "https://kate941-su.github.io/website/"
+  summary: "I have a strong knowledge in Software development especially frontend and mobile application development. I also have my OSS softwares that is created in my side projects as a hobby and makes the world better."
   education:
     - degree: "Master of Physics"
       field: "Computational physics"
       school: "Nagoya Institute of Technology, Japan"
       localtion: "Nagoya"
-      startDates: "Apr 2020"
-      endDates: "Mar 2022"
+      startDate: "Apr 2020"
+      endDate: "Mar 2022"
       current: false
       gpa: 3.0
     - degree: "Bachelor of Physics"
       field: "Computational physics"
       school: "Nagoya Institute of Technology, Japan"
       localtion: "Nagoya"
-      startDates: "Apr 2016"
-      endDates: "Mar 2020"
+      startDate: "Apr 2016"
+      endDate: "Mar 2020"
       current: false
       gpa: 3.0
   experience:
     - title: "Mid Software Engineer"
       company: "Papyrus GmbH"
       location: "Düsseldorf, Germany"
-      startDates: "Oct 2024"
+      startDate: "Oct 2024"
       current: true
       description: "Mobile Application Team"
       achievements:
@@ -38,8 +40,8 @@ resume:
     - title: "Mid Software Engineer"
       company: "miracleave"
       location: "Tokyo, Japan"
-      startDates: Mar 2023
-      endDates: "Sep 2024"
+      startDate: Mar 2023
+      endDate: "Sep 2024"
       current: false
       description: "Mobile Application Team"
       achievements:
@@ -49,8 +51,8 @@ resume:
     - title: "Software Engineer"
       company: "YAMAHA Corporation"
       location: "Hamamatsu, Japan"
-      startDates: "May 2023"
-      endDates: "Apr 2022"
+      startDate: "May 2023"
+      endDate: "Apr 2022"
       current: false
       description: "Router Development Team"
       achievements:
@@ -58,8 +60,8 @@ resume:
     - title: "Android / iOS Engineer  (part time)"
       company: "ibis"
       location: "Nagoya, Japan"
-      startDates: "Feb 2021"
-      endDates: "Mar 2022"
+      startDate: "Feb 2021"
+      endDate: "Mar 2022"
       current: false
       description: "Mobile Application Team"
       achievements:
@@ -106,7 +108,48 @@ resume:
       category: "Methodology"
       level: "advanced"
   others:
-    - title: "Website"
-      link: "https://kate941-su.github.io/website/"
-    - title: "Blog"
-      link: "https://kate941-su.github.io/website/"
+# Example 1: Complete object with all fields
+  - id: "proj-001"
+    name: "Web Development Project"
+    description: "A full-stack web application built with React and Node.js"
+    tags: ["react", "nodejs", "typescript", "mongodb"]
+    url: "https://github.com/user/web-project"
+    startDate: "2024-01-15"
+    endDate: "2024-06-30"
+    current: false
+
+# Example 2: Current project without end date
+  - id: "proj-002"
+    name: "Mobile App Development"
+    description: "Cross-platform mobile app using React Native"
+    tags: ["react-native", "javascript", "mobile"]
+    url: "https://github.com/user/mobile-app"
+    startDate: "2024-03-01"
+    current: true
+
+# Example 3: Simple project without URL
+  - id: "proj-003"
+    name: "Data Analysis Study"
+    description: "Machine learning project for customer behavior analysis"
+    tags: ["python", "machine-learning", "data-science"]
+    startDate: "2024-02-10"
+    endDate: "2024-05-15"
+    current: false
+
+# Example 4: Short-term project
+  - id: "proj-004"
+    name: "API Integration"
+    description: "Integrating third-party payment API"
+    tags: ["api", "integration", "payments"]
+    url: "https://api-docs.example.com"
+    startDate: "2024-04-01"
+    endDate: "2024-04-15"
+    current: false
+
+# Example 5: Ongoing project with minimal details
+  - id: "proj-005"
+    name: "Learning TypeScript"
+    description: "Self-paced TypeScript learning journey"
+    tags: ["typescript", "learning", "programming"]
+    startDate: "2024-01-01"
+    current: true
