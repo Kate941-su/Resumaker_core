@@ -1,13 +1,13 @@
 import { ResumeData } from "../types/resume";
 
 export const sampleResumeData: ResumeData = {
-  personalInfo: {
+  personal_info: {
     name: "Kaito Kitaya",
     position: "Mid Software Engineer",
     email: "kaito.kitaya@example.com",
     phone: "+49 123 456 7890",
     location: "Düsseldorf, Germany",
-    webSites: [
+    websites: [
       "https://linkedin.com/in/kaitokitaya",
       "https://github.com/kaitokitaya",
       "kaitokitaya.dev",
@@ -113,12 +113,7 @@ export const sampleResumeData: ResumeData = {
       name: "Cross-Platform Payment App",
       description:
         "Developed a mobile payment application using Flutter and Kotlin Multiplatform, enabling seamless transactions across iOS and Android platforms.",
-      tags: [
-        "Flutter",
-        "Kotlin Multiplatform",
-        "Firebase",
-        "Stripe API",
-      ],
+      tags: ["Flutter", "Kotlin Multiplatform", "Firebase", "Stripe API"],
       startDate: "2022-06",
       endDate: "2023-02",
       current: false,

@@ -44,6 +44,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   center: {
+    width: "50%",
     flexDirection: "column",
     alignItems: "center",
     flex: 1,
@@ -69,7 +70,7 @@ const styles = StyleSheet.create({
     flexDirection: "column",
     justifyContent: "flex-start",
     flexWrap: "wrap",
-    minWidth: 120,
+    width: "25%",
   },
   contactItem: {
     fontSize: 9,

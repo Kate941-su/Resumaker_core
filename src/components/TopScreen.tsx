@@ -5,13 +5,13 @@ import { FileText } from "lucide-react"
 import { Dropzone, DropzoneEmptyState, DropzoneContent } from "./ui/shadcn-io/dropzone"
 import { PDFViewer } from "@react-pdf/renderer"
 import ResumeTemplate from "./templates/Simple"
-import { Button } from "./ui/button"
 
 
 export default function TopScreen() {
   const [yamlData, setYamlData] = useState<any>(null)
   const [error, setError] = useState<string | null>(null)
   const [resumeData, setResumeData] = useState<ResumeData | null>(null)
+  const isDev = import.meta.env.DEV
 
   const handleDrop = async (acceptedFiles: File[]) => {
     setError(null)
@@ -113,12 +113,8 @@ export default function TopScreen() {
               <p className="text-red-600">{error}</p>
             </div>
           )}
-          <Button onClick={() => { }}>
-            Parse
-          </Button>
-
           {/* Success Display */}
-          {yamlData && (
+          {yamlData && isDev && (
             <div className="mb-4 p-4 bg-green-50 border border-green-200 rounded-md">
               <p className="text-green-600 mb-2">
                 ✅ Successfully loaded: {yamlData.fileName} ({Math.round(yamlData.fileSize / 1024)} KB)
