@@ -7,7 +7,6 @@ import { PDFViewer } from "@react-pdf/renderer"
 import ResumeTemplate from "./templates/Simple"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuRadioGroup, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger, DropdownMenuRadioItem } from "@/components/ui/dropdown-menu"
 import { Button } from "./ui/button"
-import { DropdownMenuItem } from "@radix-ui/react-dropdown-menu"
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel"
 import { Card, CardContent } from "@/components/ui/card"
 
@@ -28,8 +27,11 @@ export default function TopScreen() {
       }
       const file = acceptedFiles[0]
 
+      const isValidYaml = file.name.toLowerCase().endsWith('.yaml') || file.name.toLowerCase().endsWith('.yml')
+      const isValidJson = file.name.toLowerCase().endsWith('.json')
+
       // Validate file type
-      if (!file.name.toLowerCase().endsWith('.yaml') && !file.name.toLowerCase().endsWith('.yml')) {
+      if (!isValidYaml && !isValidJson) {
         setError('Please upload a YAML file (.yaml or .yml)')
         return
       }
@@ -37,10 +39,10 @@ export default function TopScreen() {
       // Read file content
       const text = await file.text()
 
-      // Parse YAML content
+      // Parse YAML or JSON content
       let parsedData
       try {
-        parsedData = yaml.parse(text)
+        parsedData = isValidYaml ? yaml.parse(text) : JSON.parse(text)
         console.log('Parsed YAML data:', parsedData)
       } catch (parseError) {
         console.error('YAML parsing error:', parseError)
@@ -133,7 +135,8 @@ export default function TopScreen() {
       <Dropzone
             accept={{
               'text/yaml': ['.yaml', '.yml'],
-              'application/x-yaml': ['.yaml', '.yml']
+              'application/x-yaml': ['.yaml', '.yml'],
+              'application/json': ['.json']
             }}
             maxFiles={1}
             maxSize={1024 * 1024 * 5} // 5MB

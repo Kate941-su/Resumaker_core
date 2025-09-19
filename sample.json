@@ -1,0 +1,202 @@
+{
+    "resume": {
+      "personal_info": {
+        "name": "Alex Johnson",
+        "position": "Full Stack Developer",
+        "email": "alex.johnson.dev@gmail.com",
+        "location": "San Francisco, CA",
+        "phone": "+1-555-0123",
+        "websites": [
+          "https://www.linkedin.com/in/alex-johnson-dev/",
+          "https://github.com/alexjohnson",
+          "https://alexjohnson.dev"
+        ]
+      },
+      "summary": "Passionate full-stack developer with 5+ years of experience building scalable web applications. I specialize in modern JavaScript frameworks and cloud technologies, with a strong focus on user experience and performance optimization.",
+      "education": [
+        {
+          "degree": "Master of Computer Science",
+          "field": "Software Engineering",
+          "school": "Stanford University",
+          "localtion": "Stanford, CA",
+          "startDate": "Sep 2018",
+          "endDate": "Jun 2020",
+          "current": false,
+          "gpa": 3.8
+        },
+        {
+          "degree": "Bachelor of Computer Science",
+          "field": "Computer Science",
+          "school": "UC Berkeley",
+          "localtion": "Berkeley, CA",
+          "startDate": "Sep 2014",
+          "endDate": "May 2018",
+          "current": false,
+          "gpa": 3.6
+        }
+      ],
+      "experience": [
+        {
+          "title": "Senior Full Stack Developer",
+          "company": "TechCorp Solutions",
+          "location": "San Francisco, CA",
+          "startDate": "Jan 2023",
+          "current": true,
+          "description": "Lead Development Team",
+          "achievements": [
+            "Led the migration of legacy PHP application to modern React/Node.js stack, improving performance by 40% and reducing maintenance costs by 60%.",
+            "Implemented microservices architecture using Docker and Kubernetes, enabling the team to deploy features 3x faster."
+          ]
+        },
+        {
+          "title": "Full Stack Developer",
+          "company": "StartupXYZ",
+          "location": "Palo Alto, CA",
+          "startDate": "Jun 2020",
+          "endDate": "Dec 2022",
+          "current": false,
+          "description": "Product Development Team",
+          "achievements": [
+            "Built a real-time chat application using WebSockets and React, serving 10,000+ concurrent users.",
+            "Developed RESTful APIs using Node.js and Express, reducing API response time by 50%.",
+            "Created automated testing suite using Jest and Cypress, increasing code coverage to 90%."
+          ]
+        },
+        {
+          "title": "Frontend Developer",
+          "company": "WebDesign Inc",
+          "location": "San Jose, CA",
+          "startDate": "Aug 2019",
+          "endDate": "May 2020",
+          "current": false,
+          "description": "UI/UX Development Team",
+          "achievements": [
+            "Redesigned company website using React and TypeScript, resulting in 25% increase in user engagement."
+          ]
+        },
+        {
+          "title": "Junior Developer (Internship)",
+          "company": "CodeAcademy",
+          "location": "Remote",
+          "startDate": "Jan 2019",
+          "endDate": "Jul 2019",
+          "current": false,
+          "description": "Learning Platform Team",
+          "achievements": [
+            "Developed interactive coding exercises using JavaScript and Python, used by 50,000+ students."
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "1",
+          "name": "JavaScript",
+          "category": "Programming Languages",
+          "level": "expert"
+        },
+        {
+          "id": "2",
+          "name": "React",
+          "category": "Frontend Development",
+          "level": "expert"
+        },
+        {
+          "id": "3",
+          "name": "Node.js",
+          "category": "Backend Development",
+          "level": "advanced"
+        },
+        {
+          "id": "4",
+          "name": "Python",
+          "category": "Programming Languages",
+          "level": "advanced"
+        },
+        {
+          "id": "5",
+          "name": "AWS",
+          "category": "Cloud Services",
+          "level": "intermediate"
+        },
+        {
+          "id": "6",
+          "name": "Docker",
+          "category": "DevOps",
+          "level": "advanced"
+        },
+        {
+          "id": "7",
+          "name": "PostgreSQL",
+          "category": "Database",
+          "level": "intermediate"
+        },
+        {
+          "id": "8",
+          "name": "MongoDB",
+          "category": "Database",
+          "level": "intermediate"
+        },
+        {
+          "id": "9",
+          "name": "Git",
+          "category": "Version Control",
+          "level": "expert"
+        },
+        {
+          "id": "10",
+          "name": "Agile/Scrum",
+          "category": "Methodology",
+          "level": "advanced"
+        }
+      ],
+      "others": [
+        {
+          "id": "proj-001",
+          "name": "E-commerce Platform",
+          "description": "Full-stack e-commerce solution with payment integration and inventory management",
+          "tags": ["react", "nodejs", "mongodb", "stripe"],
+          "url": "https://github.com/alexjohnson/ecommerce-platform",
+          "startDate": "2024-01-01",
+          "endDate": "2024-08-15",
+          "current": false
+        },
+        {
+          "id": "proj-002",
+          "name": "Task Management App",
+          "description": "Real-time collaborative task management application with drag-and-drop interface",
+          "tags": ["react", "socket.io", "typescript", "tailwind"],
+          "url": "https://github.com/alexjohnson/task-manager",
+          "startDate": "2024-03-01",
+          "current": true
+        },
+        {
+          "id": "proj-003",
+          "name": "Weather Dashboard",
+          "description": "Interactive weather dashboard with data visualization and location-based forecasts",
+          "tags": ["vue", "d3.js", "api", "charts"],
+          "url": "https://weather-dashboard.alexjohnson.dev",
+          "startDate": "2024-02-10",
+          "endDate": "2024-04-20",
+          "current": false
+        },
+        {
+          "id": "proj-004",
+          "name": "API Gateway",
+          "description": "Microservices API gateway with authentication and rate limiting",
+          "tags": ["nodejs", "express", "jwt", "redis"],
+          "url": "https://github.com/alexjohnson/api-gateway",
+          "startDate": "2024-05-01",
+          "endDate": "2024-06-30",
+          "current": false
+        },
+        {
+          "id": "proj-005",
+          "name": "Learning Management System",
+          "description": "Online learning platform with video streaming and progress tracking",
+          "tags": ["nextjs", "prisma", "postgresql", "aws"],
+          "startDate": "2024-07-01",
+          "current": true
+        }
+      ]
+    }
+  }

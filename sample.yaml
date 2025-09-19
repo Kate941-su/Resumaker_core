@@ -1,103 +1,103 @@
 resume:
   personal_info:
-    name: "Kaito Kitaya"
-    position: "Software Engineer"
-    email: "kaito.kitaya.personal@gmail.com"
-    location: "Düsseldorf, Germany"
-    phone: "+4915237179843"
+    name: "Alex Johnson"
+    position: "Full Stack Developer"
+    email: "alex.johnson.dev@gmail.com"
+    location: "San Francisco, CA"
+    phone: "+1-555-0123"
     websites:
-      - "https://www.linkedin.com/in/kaito-kitaya-379a70274/"
-      - "https://github.com/Kate941-su"
-      - "https://kate941-su.github.io/website/"
-  summary: "I have a strong knowledge in Software development especially frontend and mobile application development. I also have my OSS softwares that is created in my side projects as a hobby and makes the world better."
+      - "https://www.linkedin.com/in/alex-johnson-dev/"
+      - "https://github.com/alexjohnson"
+      - "https://alexjohnson.dev"
+  summary: "Passionate full-stack developer with 5+ years of experience building scalable web applications. I specialize in modern JavaScript frameworks and cloud technologies, with a strong focus on user experience and performance optimization."
   education:
-    - degree: "Master of Physics"
-      field: "Computational physics"
-      school: "Nagoya Institute of Technology, Japan"
-      localtion: "Nagoya"
-      startDate: "Apr 2020"
-      endDate: "Mar 2022"
+    - degree: "Master of Computer Science"
+      field: "Software Engineering"
+      school: "Stanford University"
+      localtion: "Stanford, CA"
+      startDate: "Sep 2018"
+      endDate: "Jun 2020"
       current: false
-      gpa: 3.0
-    - degree: "Bachelor of Physics"
-      field: "Computational physics"
-      school: "Nagoya Institute of Technology, Japan"
-      localtion: "Nagoya"
-      startDate: "Apr 2016"
-      endDate: "Mar 2020"
+      gpa: 3.8
+    - degree: "Bachelor of Computer Science"
+      field: "Computer Science"
+      school: "UC Berkeley"
+      localtion: "Berkeley, CA"
+      startDate: "Sep 2014"
+      endDate: "May 2018"
       current: false
-      gpa: 3.0
+      gpa: 3.6
   experience:
-    - title: "Mid Software Engineer"
-      company: "Papyrus GmbH"
-      location: "Düsseldorf, Germany"
-      startDate: "Oct 2024"
+    - title: "Senior Full Stack Developer"
+      company: "TechCorp Solutions"
+      location: "San Francisco, CA"
+      startDate: "Jan 2023"
       current: true
-      description: "Mobile Application Team"
+      description: "Lead Development Team"
       achievements:
-        - "Replaced an old native iOS/Android application with Kotlin Multiplatform, integrating CI/CD and fastlane."
-        - "This migration reduced the codebase by 30% and improved the Google Play Store crash ratio from 10% to 0.5%."
-    - title: "Mid Software Engineer"
-      company: "miracleave"
-      location: "Tokyo, Japan"
-      startDate: Mar 2023
-      endDate: "Sep 2024"
+        - "Led the migration of legacy PHP application to modern React/Node.js stack, improving performance by 40% and reducing maintenance costs by 60%."
+        - "Implemented microservices architecture using Docker and Kubernetes, enabling the team to deploy features 3x faster."
+    - title: "Full Stack Developer"
+      company: "StartupXYZ"
+      location: "Palo Alto, CA"
+      startDate: "Jun 2020"
+      endDate: "Dec 2022"
       current: false
-      description: "Mobile Application Team"
+      description: "Product Development Team"
       achievements:
-        - "As a project lead, I led the development and delivery of a live casting application using Flutter, Kotlin, and Swift. I established a robust CI/CD pipeline to streamline the project's workflow."
-        - "I developed a cross-platform video creation library for Flutter, utilizing Kotlin with ExoPlayer and Swift with AVFoundation. This library was a core component of the live casting application."
-        - "I created a Python utility software that automates the management of working hours for 30 employees. This single-script solution has saved the company approximately 30 hours of manual work per month."
-    - title: "Software Engineer"
-      company: "YAMAHA Corporation"
-      location: "Hamamatsu, Japan"
-      startDate: "May 2023"
-      endDate: "Apr 2022"
+        - "Built a real-time chat application using WebSockets and React, serving 10,000+ concurrent users."
+        - "Developed RESTful APIs using Node.js and Express, reducing API response time by 50%."
+        - "Created automated testing suite using Jest and Cypress, increasing code coverage to 90%."
+    - title: "Frontend Developer"
+      company: "WebDesign Inc"
+      location: "San Jose, CA"
+      startDate: "Aug 2019"
+      endDate: "May 2020"
       current: false
-      description: "Router Development Team"
+      description: "UI/UX Development Team"
       achievements:
-        - "Reduced three critical bugs in a router as an embedded engineer using Clang."
-    - title: "Android / iOS Engineer  (part time)"
-      company: "ibis"
-      location: "Nagoya, Japan"
-      startDate: "Feb 2021"
-      endDate: "Mar 2022"
+        - "Redesigned company website using React and TypeScript, resulting in 25% increase in user engagement."
+    - title: "Junior Developer (Internship)"
+      company: "CodeAcademy"
+      location: "Remote"
+      startDate: "Jan 2019"
+      endDate: "Jul 2019"
       current: false
-      description: "Mobile Application Team"
+      description: "Learning Platform Team"
       achievements:
-        - "Developed a new feature for the ibisPaint mobile application using C++ and Java, resulting in over 1K impressions on X."
+        - "Developed interactive coding exercises using JavaScript and Python, used by 50,000+ students."
   skills:
     - id: "1"
-      name: "Flutter"
-      category: "Mobile Development"
+      name: "JavaScript"
+      category: "Programming Languages"
       level: "expert"
     - id: "2"
-      name: "Kotlin Multiplatform"
-      category: "Mobile Development"
-      level: "advanced"
-    - id: "3"
       name: "React"
-      category: "Web Development"
+      category: "Frontend Development"
       level: "expert"
-    - id: "4"
-      name: "TypeScript"
-      category: "Web Development"
-      level: "expert"
-    - id: "5"
+    - id: "3"
       name: "Node.js"
       category: "Backend Development"
       level: "advanced"
-    - id: "6"
+    - id: "4"
       name: "Python"
-      category: "Backend Development"
+      category: "Programming Languages"
+      level: "advanced"
+    - id: "5"
+      name: "AWS"
+      category: "Cloud Services"
       level: "intermediate"
-    - id: "7"
+    - id: "6"
       name: "Docker"
       category: "DevOps"
+      level: "advanced"
+    - id: "7"
+      name: "PostgreSQL"
+      category: "Database"
       level: "intermediate"
     - id: "8"
-      name: "AWS"
-      category: "DevOps"
+      name: "MongoDB"
+      category: "Database"
       level: "intermediate"
     - id: "9"
       name: "Git"
@@ -108,48 +108,40 @@ resume:
       category: "Methodology"
       level: "advanced"
   others:
-# Example 1: Complete object with all fields
-  - id: "proj-001"
-    name: "Web Development Project"
-    description: "A full-stack web application built with React and Node.js"
-    tags: ["react", "nodejs", "typescript", "mongodb"]
-    url: "https://github.com/user/web-project"
-    startDate: "2024-01-15"
-    endDate: "2024-06-30"
-    current: false
-
-# Example 2: Current project without end date
-  - id: "proj-002"
-    name: "Mobile App Development"
-    description: "Cross-platform mobile app using React Native"
-    tags: ["react-native", "javascript", "mobile"]
-    url: "https://github.com/user/mobile-app"
-    startDate: "2024-03-01"
-    current: true
-
-# Example 3: Simple project without URL
-  - id: "proj-003"
-    name: "Data Analysis Study"
-    description: "Machine learning project for customer behavior analysis"
-    tags: ["python", "machine-learning", "data-science"]
-    startDate: "2024-02-10"
-    endDate: "2024-05-15"
-    current: false
-
-# Example 4: Short-term project
-  - id: "proj-004"
-    name: "API Integration"
-    description: "Integrating third-party payment API"
-    tags: ["api", "integration", "payments"]
-    url: "https://api-docs.example.com"
-    startDate: "2024-04-01"
-    endDate: "2024-04-15"
-    current: false
-
-# Example 5: Ongoing project with minimal details
-  - id: "proj-005"
-    name: "Learning TypeScript"
-    description: "Self-paced TypeScript learning journey"
-    tags: ["typescript", "learning", "programming"]
-    startDate: "2024-01-01"
-    current: true
+    - id: "proj-001"
+      name: "E-commerce Platform"
+      description: "Full-stack e-commerce solution with payment integration and inventory management"
+      tags: ["react", "nodejs", "mongodb", "stripe"]
+      url: "https://github.com/alexjohnson/ecommerce-platform"
+      startDate: "2024-01-01"
+      endDate: "2024-08-15"
+      current: false
+    - id: "proj-002"
+      name: "Task Management App"
+      description: "Real-time collaborative task management application with drag-and-drop interface"
+      tags: ["react", "socket.io", "typescript", "tailwind"]
+      url: "https://github.com/alexjohnson/task-manager"
+      startDate: "2024-03-01"
+      current: true
+    - id: "proj-003"
+      name: "Weather Dashboard"
+      description: "Interactive weather dashboard with data visualization and location-based forecasts"
+      tags: ["vue", "d3.js", "api", "charts"]
+      url: "https://weather-dashboard.alexjohnson.dev"
+      startDate: "2024-02-10"
+      endDate: "2024-04-20"
+      current: false
+    - id: "proj-004"
+      name: "API Gateway"
+      description: "Microservices API gateway with authentication and rate limiting"
+      tags: ["nodejs", "express", "jwt", "redis"]
+      url: "https://github.com/alexjohnson/api-gateway"
+      startDate: "2024-05-01"
+      endDate: "2024-06-30"
+      current: false
+    - id: "proj-005"
+      name: "Learning Management System"
+      description: "Online learning platform with video streaming and progress tracking"
+      tags: ["nextjs", "prisma", "postgresql", "aws"]
+      startDate: "2024-07-01"
+      current: true
