@@ -1,0 +1,62 @@
+resume:
+  personal_info:
+    name: "Kaito Kitaya"
+    email: "kaito.kitaya.personal@gmail.com"
+    location: "Düsseldorf, Germany"
+    linkedin: "linkedin.com/in/kaitokitaya"
+    github: "github.com/kaitokitaya"
+  education:
+    - degree: "Master of Physics"
+      field: "Computational physics"
+      school: "Nagoya Institute of Technology, Japan"
+      dates: "Apr 2020-Mar 2022"
+    - degree: "Bachelor of Physics"
+      field: "Computational physics"
+      school: "Nagoya Institute of Technology, Japan"
+      dates: "Apr 2016-Mar 2020"
+  work_experience:
+    - title: "Mid Software Engineer"
+      company: "Papyrus GmbH"
+      location: "Düsseldorf, Germany"
+      dates: "Oct 2024-Present"
+      team: "Payments team"
+      details:
+        - "Replaced an old native iOS/Android application with Kotlin Multiplatform, integrating CI/CD and fastlane."
+        - "This migration reduced the codebase by 30% and improved the Google Play Store crash ratio from 10% to 0.5%."
+    - title: "Mid Software Engineer"
+      company: "miracleave"
+      location: "Tokyo, Japan"
+      dates: "Mar 2023-Sep 2024"
+      team: "Software development team"
+      details:
+        - "As a project lead, I led the development and delivery of a live casting application using Flutter, Kotlin, and Swift."
+        - "Established a robust CI/CD pipeline to streamline the project's workflow."
+    - title: "Software Engineer"
+      company: "YAMAHA Corporation"
+      location: "Hamamatsu, Japan"
+      dates: "Apr 2022-Mar 2023"
+      details:
+        - "Reduced three critical bugs in a router as an embedded engineer using Clang."
+  freelance_projects:
+    - title: "Web Application Engineer"
+      company: "Freelance"
+      dates: "May 2023-Present"
+      details:
+        - "Negotiated with a customer and designed a simple website from scratch using React (https://hamamatsu-nakaze-dental.com/)"
+        - "Negotiated with a customer and designed a simple website from scratch using Next.js (https://okazaki-iwasedc.com/)"
+  skills:
+    languages: ["Dart", "Swift", "Kotlin", "Python", "Typescript/Javascript"]
+    technologies:
+      [
+        "Flutter",
+        "Kotlin Multiplatform",
+        "React",
+        "React Native",
+        "Next.js",
+        "Git",
+      ]
+  other_projects:
+    - title: "Website"
+      link: "https://kate941-su.github.io/website/"
+    - title: "Blog"
+      link: "https://kate941-su.github.io/website/"
