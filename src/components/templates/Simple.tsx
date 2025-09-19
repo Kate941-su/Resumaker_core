@@ -105,7 +105,6 @@ const styles = StyleSheet.create({
   },
   experienceHeader: {
     flexDirection: "row",
-    justifyContent: "space-between",
     alignItems: "flex-start",
     marginBottom: 4,
   },
@@ -232,6 +231,19 @@ const styles = StyleSheet.create({
     color: "#6b7280",
     fontStyle: "italic",
   },
+  companyInfo: {
+    flexDirection: "column",
+    width: "25%",
+  },
+  centerCompany: {
+    flexDirection: "column",
+    alignItems: "center",
+    width: "50%",
+  },
+  dateInfo: {
+    width: "25%",
+    alignItems: "flex-end",
+  }
 });
 
 interface ResumeTemplateProps {
@@ -293,18 +305,22 @@ const ResumeTemplate: React.FC<ResumeTemplateProps> = ({ data }) => {
           {experience.map((exp) => (
             <View key={exp.id} style={styles.experienceItem}>
               <View style={styles.experienceHeader}>
-                <View>
+                <View style={styles.companyInfo}>
                   <Text style={styles.jobTitle}>{exp.title}</Text>
+                  <Text style={styles.description}>{exp.description}</Text>
+                </View>
+                <View style={styles.centerCompany}>
                   <Text style={styles.company}>{exp.company}</Text>
                   {exp.location && (
                     <Text style={styles.location}>{exp.location}</Text>
                   )}
                 </View>
-                <Text style={styles.dateRange}>
-                  {exp.startDate} - {exp.current ? "Present" : exp.endDate}
-                </Text>
+                <View style={styles.dateInfo}>
+                  <Text style={styles.dateRange}>
+                    {exp.startDate} - {exp.current ? "Present" : exp.endDate}
+                  </Text>
+                </View>
               </View>
-              <Text style={styles.description}>{exp.description}</Text>
               {exp.achievements.length > 0 && (
                 <View style={styles.achievements}>
                   {exp.achievements.map((achievement, index) => (
