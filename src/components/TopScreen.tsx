@@ -8,6 +8,8 @@ import ResumeTemplate from "./templates/Simple"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuRadioGroup, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger, DropdownMenuRadioItem } from "@/components/ui/dropdown-menu"
 import { Button } from "./ui/button"
 import { DropdownMenuItem } from "@radix-ui/react-dropdown-menu"
+import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel"
+import { Card, CardContent } from "@/components/ui/card"
 
 
 export default function TopScreen() {
@@ -127,6 +129,51 @@ export default function TopScreen() {
       </header>
 
       <main className="flex-1 overflow-scroll">
+
+      <Dropzone
+            accept={{
+              'text/yaml': ['.yaml', '.yml'],
+              'application/x-yaml': ['.yaml', '.yml']
+            }}
+            maxFiles={1}
+            maxSize={1024 * 1024 * 5} // 5MB
+            minSize={1}
+            onDrop={handleDrop}
+            onError={(error) => {
+              console.error('Dropzone error:', error)
+              setError('File upload error. Please try again.')
+            }}
+          >
+            <DropzoneEmptyState
+            />
+            <DropzoneContent />
+          </Dropzone>
+        <div className="flex justify-center p-4">
+          
+          <Carousel className="w-96">
+            <CarouselContent className="-ml-1">
+              <CarouselItem className="pl-1">
+                <div className="p-1">
+                  <Card>
+                    <CardContent className="flex aspect-square items-center justify-center p-2">
+                      <div>
+                      <img 
+                        src="/dist/assets/imgs/template_simple.png" 
+                        alt="Simple Template" 
+                        className="w-full h-full object-contain rounded"
+                      />
+                      <div className="text-sm text-gray-500 text-center">Simple Template</div>
+                      </div>
+
+                    </CardContent>
+                  </Card>
+                </div>
+              </CarouselItem>
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
+        </div>
         <div className="w-full p-4">
           {/* Error Display */}
           {error && (
@@ -151,24 +198,6 @@ export default function TopScreen() {
             </div>
           )}
 
-          <Dropzone
-            accept={{
-              'text/yaml': ['.yaml', '.yml'],
-              'application/x-yaml': ['.yaml', '.yml']
-            }}
-            maxFiles={1}
-            maxSize={1024 * 1024 * 5} // 5MB
-            minSize={1}
-            onDrop={handleDrop}
-            onError={(error) => {
-              console.error('Dropzone error:', error)
-              setError('File upload error. Please try again.')
-            }}
-          >
-            <DropzoneEmptyState
-            />
-            <DropzoneContent />
-          </Dropzone>
         </div>
         {
           resumeData ?
