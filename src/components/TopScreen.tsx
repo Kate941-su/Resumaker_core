@@ -5,12 +5,16 @@ import { FileText } from "lucide-react"
 import { Dropzone, DropzoneEmptyState, DropzoneContent } from "./ui/shadcn-io/dropzone"
 import { PDFViewer } from "@react-pdf/renderer"
 import ResumeTemplate from "./templates/Simple"
+import { DropdownMenu, DropdownMenuContent, DropdownMenuRadioGroup, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger, DropdownMenuRadioItem } from "@/components/ui/dropdown-menu"
+import { Button } from "./ui/button"
+import { DropdownMenuItem } from "@radix-ui/react-dropdown-menu"
 
 
 export default function TopScreen() {
   const [yamlData, setYamlData] = useState<any>(null)
   const [error, setError] = useState<string | null>(null)
   const [resumeData, setResumeData] = useState<ResumeData | null>(null)
+  const [radioIndex, setRadioIndex] = useState<Templeate>("simple")
   const isDev = import.meta.env.DEV
 
   const handleDrop = async (acceptedFiles: File[]) => {
@@ -100,6 +104,23 @@ export default function TopScreen() {
                 <h1 className="text-2xl font-bold text-gray-900">PDF Resume Generator</h1>
                 <p className="text-sm text-gray-600">Create professional resumes with ease</p>
               </div>
+            </div>
+            <div>
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button variant="outline">Select Template</Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="w-56">
+                <DropdownMenuLabel>Templates</DropdownMenuLabel>
+                <DropdownMenuSeparator />
+                <DropdownMenuRadioGroup value={radioIndex} onValueChange={ (index) => {
+                  const template = index as Templeate
+                  setRadioIndex(template)
+                  }}>
+                  <DropdownMenuRadioItem value="simple">Simple</DropdownMenuRadioItem>
+                </DropdownMenuRadioGroup>
+              </DropdownMenuContent>
+            </DropdownMenu>
             </div>
           </div>
         </div>
