@@ -148,32 +148,7 @@ export default function TopScreen() {
             />
             <DropzoneContent />
           </Dropzone>
-        <div className="flex justify-center p-4">
-          
-          <Carousel className="w-96">
-            <CarouselContent className="-ml-1">
-              <CarouselItem className="pl-1">
-                <div className="p-1">
-                  <Card>
-                    <CardContent className="flex aspect-square items-center justify-center p-2">
-                      <div>
-                      <img 
-                        src="/dist/assets/imgs/template_simple.png" 
-                        alt="Simple Template" 
-                        className="w-full h-full object-contain rounded"
-                      />
-                      <div className="text-sm text-gray-500 text-center">Simple Template</div>
-                      </div>
 
-                    </CardContent>
-                  </Card>
-                </div>
-              </CarouselItem>
-            </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
-          </Carousel>
-        </div>
         <div className="w-full p-4">
           {/* Error Display */}
           {error && (
@@ -210,7 +185,32 @@ export default function TopScreen() {
             :
             <div></div>
         }
+        <div className="flex justify-center p-4">
+          
+          <Carousel className="w-96">
+            <CarouselContent className="-ml-1">
+              <CarouselItem className="pl-1">
+                <div className="p-1">
+                  <Card>
+                    <CardContent className="flex aspect-square items-center justify-center p-2">
+                      <div>
+                      <img 
+                        src="/dist/assets/imgs/template_simple.png" 
+                        alt="Simple Template" 
+                        className="w-full h-full object-contain rounded"
+                      />
+                      <div className="text-sm text-gray-500 text-center">Simple Template</div>
+                      </div>
 
+                    </CardContent>
+                  </Card>
+                </div>
+              </CarouselItem>
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
+        </div>
       </main>
     </div>
   )
