@@ -2,6 +2,8 @@
 
 A modern, extensible React application for generating professional PDF resumes. Built with TypeScript, React-PDF, and a plugin-based architecture that allows contributors to create custom resume templates.
 
+※ Please check how to write yaml or json files as well at DATA_FORMAT_GUIDE.md
+
 ## 🚀 Features
 
 - **📄 Multiple Input Formats**: Upload YAML or JSON files for easy data management
