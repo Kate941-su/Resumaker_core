@@ -239,7 +239,7 @@ interface ResumeTemplateProps {
 }
 
 const ResumeTemplate: React.FC<ResumeTemplateProps> = ({ data }) => {
-  const { personalInfo, summary, experience, education, skills, projects } =
+  const { personalInfo, summary, experience, education, skills, others } =
     data;
 
   // Group skills by category
@@ -364,20 +364,20 @@ const ResumeTemplate: React.FC<ResumeTemplateProps> = ({ data }) => {
         {/* Projects Section */}
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>Others</Text>
-          {projects.map((project) => (
-            <View key={project.id} style={styles.projectItem}>
+          {others.map((other) => (
+            <View key={other.id} style={styles.projectItem}>
               <View style={styles.projectHeader}>
-                <Text style={styles.projectName}>{project.name}</Text>
+                <Text style={styles.projectName}>{other.name}</Text>
                 <Text style={styles.projectDate}>
-                  {project.startDate} -{" "}
-                  {project.current ? "Present" : project.endDate}
+                  {other.startDate} -{" "}
+                  {other.current ? "Present" : other.endDate}
                 </Text>
               </View>
               <Text style={styles.projectDescription}>
-                {project.description}
+                {other.description}
               </Text>
               <Text style={styles.technologies}>
-                Technologies: {project.technologies.join(", ")}
+                Technologies: {other.tags.join(", ")}
               </Text>
             </View>
           ))}

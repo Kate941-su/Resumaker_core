@@ -1,61 +1,111 @@
 resume:
   personal_info:
     name: "Kaito Kitaya"
+    position: "Software Engineer"
     email: "kaito.kitaya.personal@gmail.com"
     location: "Düsseldorf, Germany"
-    linkedin: "linkedin.com/in/kaitokitaya"
-    github: "github.com/kaitokitaya"
+    websites:
+      - "https://www.linkedin.com/in/kaito-kitaya-379a70274/"
+      - "https://github.com/Kate941-su"
+      - "https://kate941-su.github.io/website/"
   education:
     - degree: "Master of Physics"
       field: "Computational physics"
       school: "Nagoya Institute of Technology, Japan"
-      dates: "Apr 2020-Mar 2022"
+      localtion: "Nagoya"
+      startDates: "Apr 2020"
+      endDates: "Mar 2022"
+      current: false
+      gpa: 3.0
     - degree: "Bachelor of Physics"
       field: "Computational physics"
       school: "Nagoya Institute of Technology, Japan"
-      dates: "Apr 2016-Mar 2020"
-  work_experience:
+      localtion: "Nagoya"
+      startDates: "Apr 2016"
+      endDates: "Mar 2020"
+      current: false
+      gpa: 3.0
+  experience:
     - title: "Mid Software Engineer"
       company: "Papyrus GmbH"
       location: "Düsseldorf, Germany"
-      dates: "Oct 2024-Present"
-      team: "Payments team"
-      details:
+      startDates: "Oct 2024"
+      current: true
+      description: "Mobile Application Team"
+      achievements:
         - "Replaced an old native iOS/Android application with Kotlin Multiplatform, integrating CI/CD and fastlane."
         - "This migration reduced the codebase by 30% and improved the Google Play Store crash ratio from 10% to 0.5%."
     - title: "Mid Software Engineer"
       company: "miracleave"
       location: "Tokyo, Japan"
-      dates: "Mar 2023-Sep 2024"
-      team: "Software development team"
-      details:
-        - "As a project lead, I led the development and delivery of a live casting application using Flutter, Kotlin, and Swift."
-        - "Established a robust CI/CD pipeline to streamline the project's workflow."
+      startDates: Mar 2023
+      endDates: "Sep 2024"
+      current: false
+      description: "Mobile Application Team"
+      achievements:
+        - "As a project lead, I led the development and delivery of a live casting application using Flutter, Kotlin, and Swift. I established a robust CI/CD pipeline to streamline the project's workflow."
+        - "I developed a cross-platform video creation library for Flutter, utilizing Kotlin with ExoPlayer and Swift with AVFoundation. This library was a core component of the live casting application."
+        - "I created a Python utility software that automates the management of working hours for 30 employees. This single-script solution has saved the company approximately 30 hours of manual work per month."
     - title: "Software Engineer"
       company: "YAMAHA Corporation"
       location: "Hamamatsu, Japan"
-      dates: "Apr 2022-Mar 2023"
-      details:
+      startDates: "May 2023"
+      endDates: "Apr 2022"
+      current: false
+      description: "Router Development Team"
+      achievements:
         - "Reduced three critical bugs in a router as an embedded engineer using Clang."
-  freelance_projects:
-    - title: "Web Application Engineer"
-      company: "Freelance"
-      dates: "May 2023-Present"
-      details:
-        - "Negotiated with a customer and designed a simple website from scratch using React (https://hamamatsu-nakaze-dental.com/)"
-        - "Negotiated with a customer and designed a simple website from scratch using Next.js (https://okazaki-iwasedc.com/)"
+    - title: "Android / iOS Engineer  (part time)"
+      company: "ibis"
+      location: "Nagoya, Japan"
+      startDates: "Feb 2021"
+      endDates: "Mar 2022"
+      current: false
+      description: "Mobile Application Team"
+      achievements:
+        - "Developed a new feature for the ibisPaint mobile application using C++ and Java, resulting in over 1K impressions on X."
   skills:
-    languages: ["Dart", "Swift", "Kotlin", "Python", "Typescript/Javascript"]
-    technologies:
-      [
-        "Flutter",
-        "Kotlin Multiplatform",
-        "React",
-        "React Native",
-        "Next.js",
-        "Git",
-      ]
-  other_projects:
+    - id: "1"
+      name: "Flutter"
+      category: "Mobile Development"
+      level: "expert"
+    - id: "2"
+      name: "Kotlin Multiplatform"
+      category: "Mobile Development"
+      level: "advanced"
+    - id: "3"
+      name: "React"
+      category: "Web Development"
+      level: "expert"
+    - id: "4"
+      name: "TypeScript"
+      category: "Web Development"
+      level: "expert"
+    - id: "5"
+      name: "Node.js"
+      category: "Backend Development"
+      level: "advanced"
+    - id: "6"
+      name: "Python"
+      category: "Backend Development"
+      level: "intermediate"
+    - id: "7"
+      name: "Docker"
+      category: "DevOps"
+      level: "intermediate"
+    - id: "8"
+      name: "AWS"
+      category: "DevOps"
+      level: "intermediate"
+    - id: "9"
+      name: "Git"
+      category: "Version Control"
+      level: "expert"
+    - id: "10"
+      name: "Agile/Scrum"
+      category: "Methodology"
+      level: "advanced"
+  others:
     - title: "Website"
       link: "https://kate941-su.github.io/website/"
     - title: "Blog"

@@ -3,13 +3,15 @@ import { ResumeData } from "../types/resume";
 export const sampleResumeData: ResumeData = {
   personalInfo: {
     name: "Kaito Kitaya",
-    title: "Mid Software Engineer",
+    position: "Mid Software Engineer",
     email: "kaito.kitaya@example.com",
     phone: "+49 123 456 7890",
     location: "Düsseldorf, Germany",
-    linkedin: "https://linkedin.com/in/kaitokitaya",
-    github: "https://github.com/kaitokitaya",
-    website: "kaitokitaya.dev",
+    webSites: [
+      "https://linkedin.com/in/kaitokitaya",
+      "https://github.com/kaitokitaya",
+      "kaitokitaya.dev",
+    ],
   },
   summary:
     "I am a passionate Mid Software Engineer with expertise in mobile and web development. I specialize in creating robust, scalable applications using modern technologies like Flutter, Kotlin Multiplatform, React, and TypeScript. Currently working at Papyrus GmbH in Düsseldorf, Germany, I focus on payments team development and have successfully delivered key features, improving user experience and system performance.",
@@ -105,13 +107,13 @@ export const sampleResumeData: ResumeData = {
       level: "advanced",
     },
   ],
-  projects: [
+  others: [
     {
       id: "1",
       name: "Cross-Platform Payment App",
       description:
         "Developed a mobile payment application using Flutter and Kotlin Multiplatform, enabling seamless transactions across iOS and Android platforms.",
-      technologies: [
+      tags: [
         "Flutter",
         "Kotlin Multiplatform",
         "Firebase",
@@ -120,14 +122,14 @@ export const sampleResumeData: ResumeData = {
       startDate: "2022-06",
       endDate: "2023-02",
       current: false,
-      github: "github.com/kaitokitaya/payment-app",
+      url: "github.com/kaitokitaya/payment-app",
     },
     {
       id: "2",
       name: "Real-time Dashboard",
       description:
         "Built a real-time analytics dashboard using React and WebSocket connections, providing live data visualization for business metrics.",
-      technologies: ["React", "TypeScript", "WebSocket", "Chart.js", "Node.js"],
+      tags: ["React", "TypeScript", "WebSocket", "Chart.js", "Node.js"],
       startDate: "2021-03",
       endDate: "2021-08",
       current: false,
@@ -138,11 +140,11 @@ export const sampleResumeData: ResumeData = {
       name: "API Gateway Service",
       description:
         "Designed and implemented a microservices API gateway using Node.js and Express, handling authentication, rate limiting, and request routing.",
-      technologies: ["Node.js", "Express", "JWT", "Redis", "Docker"],
+      tags: ["Node.js", "Express", "JWT", "Redis", "Docker"],
       startDate: "2020-09",
       endDate: "2021-01",
       current: false,
-      github: "github.com/kaitokitaya/api-gateway",
+      url: "github.com/kaitokitaya/api-gateway",
     },
   ],
 };
