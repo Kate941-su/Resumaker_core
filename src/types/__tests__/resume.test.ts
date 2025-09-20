@@ -1,4 +1,4 @@
-import { safeMapResumeData, ResumeData } from "../resume";
+import { safeMapResumeData } from "../resume";
 
 describe("safeMapResumeData", () => {
   describe("Valid Data", () => {

@@ -1,6 +1,8 @@
 // Jest setup file
 // This file is run before each test file
 
+// Jest globals are available automatically
+
 // Mock console methods to reduce noise in tests
 global.console = {
   ...console,
