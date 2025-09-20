@@ -9,6 +9,7 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuRadioGroup, DropdownMenu
 import { Button } from "./ui/button"
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel"
 import { Card, CardContent } from "@/components/ui/card"
+import { safeMapResumeData } from "@/types/resume"
 
 
 export default function TopScreen() {
@@ -66,7 +67,7 @@ export default function TopScreen() {
         const others = parsedData.resume.others
         try {
           // Try to map YAML data to ResumeData structure
-          const mappedData: ResumeData = {
+          const mappedData: ResumeData = safeMapResumeData({
             personal_info: {
               name: personalInfo.name,
               position: personalInfo.title,
@@ -80,17 +81,14 @@ export default function TopScreen() {
             education: education || [],
             skills: skills || [],
             others: others || []
-          };
+          });
           setResumeData(mappedData);
-        } catch (mappingError) {
-          console.warn('Could not map YAML data to resume format:', mappingError);
+        } catch (e) {
+          let error = e as Error
+          console.warn('Could not map YAML data to resume format:', error.message);
+          setError(error.message)
         }
       }
-
-      console.log('File name:', file.name)
-      console.log('File size:', file.size)
-      console.log('Parsed data keys:', Object.keys(parsedData))
-
     } catch (err) {
       console.error('Error processing file:', err)
       setError('Error reading file. Please try again.')
