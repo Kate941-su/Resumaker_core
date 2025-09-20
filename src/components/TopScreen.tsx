@@ -196,7 +196,7 @@ export default function TopScreen() {
                     <CardContent className="flex aspect-square items-center justify-center p-2">
                       <div>
                       <img 
-                        src="/assets/imgs/template_simple.png" 
+                        src="/Resumaker_core/static/media/template_simple.png" 
                         alt="Simple Template" 
                         className="w-full h-full object-contain rounded"
                       />
