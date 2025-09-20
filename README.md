@@ -213,6 +213,39 @@ We welcome contributions! Here's how you can help:
 - Improve performance
 - Enhance UI/UX
 
+## 🚀 CI/CD Pipeline
+
+This project uses GitHub Actions for continuous integration and deployment:
+
+### Workflows
+
+- **Test Validation** - Runs on every push to main branch
+- **Continuous Integration** - Comprehensive testing and validation
+- **Security Audit** - Checks for vulnerabilities
+
+### Status Badges
+
+[![Test Validation](https://github.com/your-username/pdf-generator/actions/workflows/test-only.yml/badge.svg)](https://github.com/your-username/pdf-generator/actions/workflows/test-only.yml)
+[![CI](https://github.com/your-username/pdf-generator/actions/workflows/ci.yml/badge.svg)](https://github.com/your-username/pdf-generator/actions/workflows/ci.yml)
+
+### What Gets Tested
+
+- ✅ TypeScript compilation
+- ✅ ESLint code quality checks
+- ✅ Unit tests (50+ test cases)
+- ✅ Test coverage reporting
+- ✅ Security vulnerability scanning
+- ✅ Build verification
+
+### Pull Request Requirements
+
+Before merging, all PRs must pass:
+
+- All tests must pass
+- Code must pass ESLint checks
+- TypeScript compilation must succeed
+- No high-severity security vulnerabilities
+
 ## 📋 TODO List
 
 ### High Priority
