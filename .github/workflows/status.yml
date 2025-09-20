@@ -1,0 +1,17 @@
+name: Workflow Status
+
+on:
+  workflow_run:
+    workflows: ["Test Validation", "Continuous Integration"]
+    types: [completed]
+
+jobs:
+  status:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion != 'success' }}
+
+    steps:
+      - name: Notify on failure
+        run: |
+          echo "❌ Workflow failed: ${{ github.event.workflow_run.name }}"
+          echo "Check the logs for details: ${{ github.event.workflow_run.html_url }}"
